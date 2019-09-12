@@ -1,0 +1,154 @@
+,AD #.1,County.3,"County Pop.
+in AD","% of AD
+in County"
+0,1,Butte,19698,0.042
+1,1,Lassen,34895,0.075
+2,1,Modoc,9686,0.021
+3,1,Nevada,98764,0.212
+4,1,Placer,58104,0.125
+5,1,Plumas,20007,0.043
+6,1,Shasta,177223,0.38
+7,1,Sierra,3240,0.007
+8,1,Siskiyou,44900,0.096
+9,2,Del Norte,28610,0.062
+10,2,Humboldt,134623,0.291
+11,2,Mendocino,87841,0.19
+12,2,Sonoma,198544,0.428
+13,2,Trinity,13786,0.03
+14,3,Butte,200302,0.427
+15,3,Colusa,10201,0.022
+16,3,Glenn,28122,0.06
+17,3,Sutter,94737,0.202
+18,3,Tehama,63463,0.135
+19,3,Yuba,72155,0.154
+20,4,Colusa,11218,0.024
+21,4,Lake,64665,0.139
+22,4,Napa,136484,0.293
+23,4,Solano,30000,0.064
+24,4,Sonoma,71913,0.154
+25,4,Yolo,152105,0.326
+26,5,Alpine,1175,0.003
+27,5,Amador,38091,0.082
+28,5,Calaveras,45578,0.098
+29,5,El Dorado,119314,0.258
+30,5,Madera,150865,0.326
+31,5,Mariposa,18251,0.039
+32,5,Mono,14202,0.031
+33,5,Placer,20206,0.044
+34,5,Tuolumne,55365,0.12
+35,6,El Dorado,61744,0.132
+36,6,Placer,270122,0.576
+37,6,Sacramento,137075,0.292
+38,7,Sacramento,415349,0.895
+39,7,Yolo,48744,0.105
+40,8,Sacramento,463990,1.0
+41,9,Sacramento,397799,0.849
+42,9,San Joaquin,70713,0.151
+43,10,Marin,252409,0.542
+44,10,Sonoma,213421,0.458
+45,11,Contra Costa,225229,0.482
+46,11,Sacramento,4575,0.01
+47,11,Solano,237182,0.508
+48,12,San Joaquin,152821,0.331
+49,12,Stanislaus,308945,0.669
+50,13,San Joaquin,461772,1.0
+51,13,Stanislaus,2,0.0
+52,14,Contra Costa,320686,0.687
+53,14,Solano,146162,0.313
+54,15,Alameda,231769,0.494
+55,15,Contra Costa,237383,0.506
+56,16,Alameda,200206,0.43
+57,16,Contra Costa,265727,0.57
+58,17,San Francisco,467501,1.0
+59,18,Alameda,469657,1.0
+60,19,San Francisco,337734,0.722
+61,19,San Mateo,130033,0.278
+62,20,Alameda,461374,1.0
+63,21,Merced,255793,0.555
+64,21,Stanislaus,205506,0.445
+65,22,San Mateo,462734,1.0
+66,23,Fresno,462185,0.987
+67,23,Tulare,6000,0.013
+68,24,San Mateo,125684,0.271
+69,24,Santa Clara,338915,0.729
+70,25,Alameda,147265,0.319
+71,25,Santa Clara,313941,0.681
+72,26,Inyo,18546,0.039
+73,26,Kern,15441,0.033
+74,26,Tulare,436179,0.928
+75,27,Santa Clara,464103,1.0
+76,28,Santa Clara,466090,1.0
+77,29,Monterey,176529,0.379
+78,29,Santa Clara,93002,0.2
+79,29,Santa Cruz,196339,0.421
+80,30,Monterey,238528,0.512
+81,30,San Benito,55269,0.119
+82,30,Santa Clara,105591,0.227
+83,30,Santa Cruz,66043,0.142
+84,31,Fresno,468265,1.0
+85,32,Kern,313868,0.672
+86,32,Kings,152982,0.328
+87,33,San Bernardino,469288,1.0
+88,34,Kern,466780,1.0
+89,35,San Luis Obispo,269637,0.577
+90,35,Santa Barbara,197697,0.423
+91,36,Kern,43542,0.094
+92,36,Los Angeles,400568,0.865
+93,36,San Bernardino,18925,0.041
+94,37,Santa Barbara,226198,0.485
+95,37,Ventura,240002,0.515
+96,38,Los Angeles,342620,0.729
+97,38,Ventura,127266,0.271
+98,39,Los Angeles,466422,1.0
+99,40,San Bernardino,462470,1.0
+100,41,Los Angeles,364993,0.789
+101,41,San Bernardino,97514,0.211
+102,42,Riverside,337071,0.728
+103,42,San Bernardino,125881,0.272
+104,43,Los Angeles,468406,1.0
+105,44,Los Angeles,8270,0.018
+106,44,Ventura,454001,0.982
+107,45,Los Angeles,465717,0.996
+108,45,Ventura,2049,0.004
+109,46,Los Angeles,464441,1.0
+110,47,San Bernardino,470257,1.0
+111,48,Los Angeles,461346,1.0
+112,49,Los Angeles,462545,1.0
+113,50,Los Angeles,470048,1.0
+114,51,Los Angeles,465643,1.0
+115,52,Los Angeles,149602,0.321
+116,52,San Bernardino,316076,0.679
+117,53,Los Angeles,463916,1.0
+118,54,Los Angeles,466445,1.0
+119,55,Los Angeles,167827,0.364
+120,55,Orange,219054,0.474
+121,55,San Bernardino,74799,0.162
+122,56,Imperial,174528,0.375
+123,56,Riverside,290774,0.625
+124,57,Los Angeles,465845,1.0
+125,58,Los Angeles,468258,1.0
+126,59,Los Angeles,465104,1.0
+127,60,Riverside,470280,1.0
+128,61,Riverside,470330,1.0
+129,62,Los Angeles,466713,1.0
+130,63,Los Angeles,461153,1.0
+131,63,Orange,3,0.0
+132,64,Los Angeles,466464,1.0
+133,65,Orange,461523,1.0
+134,66,Los Angeles,467745,1.0
+135,67,Riverside,462771,1.0
+136,68,Orange,462917,1.0
+137,69,Orange,465214,1.0
+138,70,Los Angeles,468514,1.0
+139,71,Riverside,40595,0.088
+140,71,San Diego,421989,0.912
+141,72,Orange,469933,1.0
+142,73,Orange,459283,1.0
+143,74,Orange,472305,1.0
+144,75,Riverside,117820,0.253
+145,75,San Diego,347728,0.747
+146,76,San Diego,468627,1.0
+147,77,San Diego,464066,1.0
+148,78,San Diego,461885,1.0
+149,79,San Diego,466416,1.0
+150,80,San Diego,464602,1.0

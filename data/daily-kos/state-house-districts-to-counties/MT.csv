@@ -1,0 +1,158 @@
+,HD #.1,County.3,"County Pop.
+in HD","% of HD
+in County"
+0,1,Lincoln,9838,1.0
+1,2,Lincoln,9849,1.0
+2,3,Flathead,9981,1.0
+3,4,Flathead,9915,1.0
+4,5,Flathead,9869,1.0
+5,6,Flathead,9953,1.0
+6,7,Flathead,9955,1.0
+7,8,Flathead,9989,1.0
+8,9,Flathead,9999,1.0
+9,10,Flathead,7739,0.783
+10,10,Lake,2151,0.217
+11,11,Flathead,9988,1.0
+12,12,Lake,9886,1.0
+13,13,Flathead,3535,0.354
+14,13,Sanders,6452,0.646
+15,14,Mineral,4223,0.423
+16,14,Missoula,797,0.08
+17,14,Sanders,4961,0.497
+18,15,Flathead,5,0.001
+19,15,Glacier,2042,0.213
+20,15,Lake,6805,0.709
+21,15,Pondera,748,0.078
+22,16,Glacier,9604,1.0
+23,17,Lewis and Clark,1249,0.126
+24,17,Pondera,2579,0.26
+25,17,Teton,6073,0.613
+26,18,Glacier,1753,0.177
+27,18,Pondera,2826,0.285
+28,18,Toole,5324,0.538
+29,19,Cascade,9919,1.0
+30,20,Cascade,9956,1.0
+31,21,Cascade,9894,1.0
+32,22,Cascade,9859,1.0
+33,23,Cascade,9868,1.0
+34,24,Cascade,9791,1.0
+35,25,Cascade,9834,1.0
+36,26,Cascade,10076,1.0
+37,27,Cascade,1239,0.125
+38,27,Chouteau,4546,0.459
+39,27,Hill,1776,0.179
+40,27,Liberty,2339,0.236
+41,28,Hill,9975,1.0
+42,29,Fergus,9535,0.951
+43,29,Petroleum,494,0.049
+44,30,Cascade,891,0.089
+45,30,Fergus,2051,0.206
+46,30,Golden Valley,884,0.089
+47,30,Judith Basin,2072,0.208
+48,30,Meagher,1891,0.19
+49,30,Wheatland,2168,0.218
+50,31,Roosevelt,8350,0.848
+51,31,Valley,1491,0.152
+52,32,Blaine,4490,0.458
+53,32,Chouteau,1267,0.129
+54,32,Hill,2920,0.298
+55,32,Phillips,1123,0.115
+56,33,Blaine,2001,0.205
+57,33,Hill,1425,0.146
+58,33,Phillips,3130,0.321
+59,33,Valley,3206,0.328
+60,34,Daniels,1751,0.177
+61,34,Roosevelt,2075,0.21
+62,34,Sheridan,3384,0.342
+63,34,Valley,2672,0.27
+64,35,Richland,9746,1.0
+65,36,Dawson,8966,0.898
+66,36,Wibaux,1017,0.102
+67,37,Carter,1160,0.115
+68,37,Custer,1147,0.113
+69,37,Fallon,2890,0.285
+70,37,Garfield,1206,0.119
+71,37,McCone,1734,0.171
+72,37,Powder River,815,0.08
+73,37,Prairie,1179,0.116
+74,38,Custer,9890,1.0
+75,39,Custer,662,0.066
+76,39,Rosebud,4605,0.462
+77,39,Treasure,718,0.072
+78,39,Yellowstone,3975,0.399
+79,40,Musselshell,4538,0.458
+80,40,Yellowstone,5371,0.542
+81,41,Big Horn,4042,0.421
+82,41,Powder River,928,0.097
+83,41,Rosebud,4628,0.482
+84,42,Big Horn,8823,0.919
+85,42,Yellowstone,778,0.081
+86,43,Yellowstone,9833,1.0
+87,44,Yellowstone,9873,1.0
+88,45,Yellowstone,9865,1.0
+89,46,Yellowstone,9873,1.0
+90,47,Yellowstone,9826,1.0
+91,48,Yellowstone,9751,1.0
+92,49,Yellowstone,9734,1.0
+93,50,Yellowstone,9846,1.0
+94,51,Yellowstone,9844,1.0
+95,52,Yellowstone,9832,1.0
+96,53,Yellowstone,9898,1.0
+97,54,Yellowstone,9904,1.0
+98,55,Yellowstone,9875,1.0
+99,56,Yellowstone,9894,1.0
+100,57,Stillwater,9117,0.946
+101,57,Sweet Grass,519,0.054
+102,58,Carbon,10078,1.0
+103,59,Gallatin,530,0.055
+104,59,Park,5970,0.62
+105,59,Sweet Grass,3132,0.325
+106,60,Park,9666,1.0
+107,61,Gallatin,9829,1.0
+108,62,Gallatin,9908,1.0
+109,63,Gallatin,9896,1.0
+110,64,Gallatin,9924,1.0
+111,65,Gallatin,9815,1.0
+112,66,Gallatin,9727,1.0
+113,67,Gallatin,9952,1.0
+114,68,Gallatin,9958,1.0
+115,69,Gallatin,9974,1.0
+116,70,Broadwater,5612,0.565
+117,70,Lewis and Clark,4322,0.435
+118,71,Jefferson,1519,0.15
+119,71,Madison,7691,0.761
+120,71,Silver Bow,894,0.088
+121,72,Beaverhead,9246,0.912
+122,72,Silver Bow,890,0.088
+123,73,Silver Bow,10049,1.0
+124,74,Silver Bow,10048,1.0
+125,75,Jefferson,9887,1.0
+126,76,Silver Bow,10056,1.0
+127,77,Deer Lodge,6979,0.694
+128,77,Granite,3079,0.306
+129,78,Deer Lodge,2319,0.231
+130,78,Powell,5467,0.544
+131,78,Silver Bow,2263,0.225
+132,79,Lewis and Clark,9914,1.0
+133,80,Lewis and Clark,8333,0.842
+134,80,Powell,1560,0.158
+135,81,Lewis and Clark,9866,1.0
+136,82,Lewis and Clark,9882,1.0
+137,83,Lewis and Clark,9911,1.0
+138,84,Lewis and Clark,9918,1.0
+139,85,Ravalli,10115,1.0
+140,86,Ravalli,9990,1.0
+141,87,Ravalli,10057,1.0
+142,88,Ravalli,10050,1.0
+143,89,Missoula,9869,1.0
+144,90,Missoula,9845,1.0
+145,91,Missoula,9722,1.0
+146,92,Missoula,10121,1.0
+147,93,Lake,9904,1.0
+148,94,Missoula,9821,1.0
+149,95,Missoula,9708,1.0
+150,96,Missoula,9976,1.0
+151,97,Missoula,9979,1.0
+152,98,Missoula,9819,1.0
+153,99,Missoula,9845,1.0
+154,100,Missoula,9797,1.0

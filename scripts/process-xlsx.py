@@ -2,26 +2,33 @@
 # coding: utf-8
 
 import pandas as pd
+import os, os.path
 import pathlib
 
 
 # Counties ↔ Congressional District correspondences
 
-XLSX_SOURCE_PATH = "data/daily-kos/Counties ↔ congressional district correspondences.xlsx"
+DATA_ROOT = 'data/daily-kos/'
 
-C_TO_D_PATH = 'data/daily-kos/counties-to-congressional-districts/%s.csv'
-C_TO_D_COLS = 'A:D'
-D_TO_C_PATH = 'data/daily-kos/congressional-districts-to-counties/%s.csv'
-D_TO_C_COLS = 'F:I'
+
+XLSX_CONGRESSIONAL = "Counties ↔ congressional district correspondences.xlsx"
+XLSX_STATE = "Counties ↔ legislative district correspondences.xlsx"
 
 CORRESPONDENCES = [
-    (C_TO_D_PATH, C_TO_D_COLS),
-    (D_TO_C_PATH, D_TO_C_COLS),
+    # (file, columns, output)
+    (XLSX_CONGRESSIONAL, 'A:D', 'counties-to-congressional-districts/%s.csv'),
+    (XLSX_CONGRESSIONAL, 'F:I', 'congressional-districts-to-counties/%s.csv'),
+    (XLSX_STATE, 'A:D', 'counties-to-state-senate-districts/%s.csv'),
+    (XLSX_STATE, 'F:I', 'state-senate-districts-to-counties/%s.csv'),
+    (XLSX_STATE, 'K:N', 'counties-to-state-house-districts/%s.csv'),
+    (XLSX_STATE, 'P:S', 'state-house-districts-to-counties/%s.csv'),
 ]
 
-for output_path, xlsx_cols in CORRESPONDENCES:
+for xlsx_path, xlsx_cols, output_format in CORRESPONDENCES:
+    input_path = os.path.join(os.getcwd(), DATA_ROOT, xlsx_path)
+    output_path = os.path.join(os.getcwd(), DATA_ROOT, output_format)
     df = pd.read_excel(
-        XLSX_SOURCE_PATH,
+        input_path,
         sheet_name=None,
         skiprows=1,
         usecols=xlsx_cols)
@@ -31,4 +38,9 @@ for output_path, xlsx_cols in CORRESPONDENCES:
     path.parent.mkdir(parents=True, exist_ok=True)
 
     for sheet_name, sheet_content in df.items():
+        # drop blank rows
+        sheet_content.replace('', float('nan'), inplace=True)
+        sheet_content.dropna(how='any', inplace=True)
+
+        # Write
         sheet_content.to_csv(output_path % sheet_name)

@@ -1,0 +1,52 @@
+,SD #.1,County.1,"County Pop.
+in SD","% of SD
+in County"
+0,A,Fairbanks North Star,35464.0,1.0
+1,B,Fairbanks North Star,35459.0,1.0
+2,C,Denali,1826.0,0.051
+3,C,Fairbanks North Star,26658.0,0.748
+4,C,Southeast Fairbanks,2232.0,0.063
+5,C,Valdez-Cordova,2240.0,0.063
+6,C,Yukon-Koyukuk,2688.0,0.075
+7,D,Matanuska-Susitna,35533.0,1.0
+8,E,Matanuska-Susitna,25814.0,0.726
+9,E,Southeast Fairbanks,4797.0,0.135
+10,E,Valdez-Cordova,4955.0,0.139
+11,F,Anchorage,7739.0,0.219
+12,F,Matanuska-Susitna,27648.0,0.781
+13,G,Anchorage,35496.0,1.0
+14,H,Anchorage,35478.0,1.0
+15,I,Anchorage,35722.0,1.0
+16,J,Anchorage,35410.0,1.0
+17,K,Anchorage,35397.0,1.0
+18,L,Anchorage,35511.0,1.0
+19,M,Anchorage,35617.0,1.0
+20,N,Anchorage,35456.0,1.0
+21,O,Kenai Peninsula,36047.0,1.0
+22,P,Kenai Peninsula,19353.0,0.537
+23,P,Kodiak Island,13592.0,0.377
+24,P,Valdez-Cordova,2441.0,0.068
+25,P,Yakutat,662.0,0.018
+26,Q,Haines,2508.0,0.071
+27,Q,Hoonah-Angoon,552.0,0.016
+28,Q,Juneau,31275.0,0.886
+29,Q,Skagway Municipality,968.0,0.027
+30,R,Hoonah-Angoon,1598.0,0.045
+31,R,Ketchikan Gateway,13477.0,0.378
+32,R,Petersburg,3815.0,0.107
+33,R,Prince of Wales-Hyder,5559.0,0.156
+34,R,Sitka,8881.0,0.249
+35,R,Wrangell City and,2369.0,0.066
+36,S,Aleutians East,3141.0,0.09
+37,S,Aleutians West,5561.0,0.159
+38,S,Bethel,17013.0,0.486
+39,S,Bristol Bay,997.0,0.028
+40,S,Dillingham,4847.0,0.139
+41,S,Kusilvak,746.0,0.021
+42,S,Lake and Peninsula,1631.0,0.047
+43,S,Yukon-Koyukuk,1058.0,0.03
+44,T,Kusilvak,6713.0,0.192
+45,T,Nome,9492.0,0.271
+46,T,North Slope,9430.0,0.269
+47,T,Northwest Arctic,7523.0,0.215
+48,T,Yukon-Koyukuk,1842.0,0.053
