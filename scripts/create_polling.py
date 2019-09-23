@@ -1,7 +1,7 @@
 import os, os.path
 import pandas as pd
 from models import CountyPoll, CountyFragment
-from main import DATA_DIR
+from config import DATA_DIR
 
 COUNTY_POLLING_INFO = [
     ("VA", os.path.join(DATA_DIR, "Yale_Polling.csv"))

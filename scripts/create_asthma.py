@@ -1,7 +1,7 @@
 import os, os.path
 import pandas as pd
 from models import CountyAsthmaCounts, CountyFragment
-from main import DATA_DIR
+from config import DATA_DIR
 
 COUNTY_ASTHMA_INFO = [
     ("VA", os.path.join(DATA_DIR, 'Asthma_Data_ALA_6.26.2019.csv'))
@@ -20,10 +20,10 @@ def read_asthma_data(session, state_abbr, csv_path):
         county_shortcode = CountyFragment.to_shortcode(state_abbr, raw_fullname)
         num_children = int(row['Pediatric Asthma'].replace(',', ''))
         num_adults = int(row['Adult Asthma'].replace(',', ''))
-        cp = CountyAsthmaCounts(county_shortcode=county_shortcode,
+        ac = CountyAsthmaCounts(county_shortcode=county_shortcode,
                                 num_children=num_children,
                                 num_adults=num_adults)
-        session.add(cp)
+        session.add(ac)
         asthma_created += 1
         print("Asthma records created: %d" % asthma_created, end="\r")
 

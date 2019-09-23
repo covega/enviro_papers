@@ -1,12 +1,8 @@
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from models import Base
-from scripts import create_daily_kos, create_polling, create_asthma
-import os, os.path
-
-DATA_DIR = os.path.join(os.getcwd(), 'data/')
-SQLITE = 'sqlite:///papers.db' # on-disk
-# SQLITE = 'sqlite://' # in-memory
+from scripts import create_daily_kos, create_polling, create_asthma, create_voting
+from config import SQLITE
 
 class EnvironmentPapersDatabase:
     db_engine = None
@@ -33,5 +29,6 @@ if __name__ == '__main__':
     # db.create_tables()
     # create_daily_kos(db.session)
     # create_polling(db.session)
+    # create_asthma(db.session)
     Base.metadata.create_all(db.db_engine)
-    create_asthma(db.session)
+    create_voting(db.session)

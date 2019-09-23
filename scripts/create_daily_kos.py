@@ -1,7 +1,7 @@
 import os, os.path
 import pandas as pd
 from models import State, District, CountyFragment, DistrictType
-from main import DATA_DIR
+from config import DATA_DIR
 
 SS_FOLDER = os.path.join(DATA_DIR, 'daily-kos/counties-to-state-senate-districts/')
 SH_FOLDER = os.path.join(DATA_DIR, 'daily-kos/counties-to-state-house-districts/')
