@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
+{% block content%}
+<h2>{{district}}</h2>
+<h3>Legislator: {{ district.legislator }}</h3>
+<p>In the {{district.counties | length}} counties that make up {{ district }}, {{ district.asthma_children}} kids and {{ district.asthma_adults}} adults live with asthma.</p>
+<p>In the counties that make up this district, {{"%.2f" | format(district.polling_happening.avg) }}% know that global warming is happening, and {{"%.2f" | format(district.polling_worried.avg) }}% are somewhat or very worried about it. {{"%.2f" | format(district.polling_regulate.avg) }}% support regulating CO2 as a pollutant, and {{"%.2f" | format(district.polling_rebates.avg) }}% want to provide tax rebates for people who purchase energy-efficient vehicles or solar panels.</p>
+<ul>
+    <li>
+        <p>Number of people who know that global warming is happening:</p>
+        <ul>
+            <li>
+                {{"%.2f" | format(district.polling_happening.min_result) }}%
+                in {{district.polling_happening.min_county}}, and
+                {{"%.2f" | format(district.polling_happening.max_result) }}%
+                in {{district.polling_happening.max_county}}
+            </li>
+        </ul>
+    </li>
+    <li>
+        <p>Percent who are somewhat or very worried about climate change:</p>
+        <ul>
+            <li>
+                {{"%.2f" | format(district.polling_worried.min_result) }}%
+                in {{district.polling_worried.min_county}}, and
+                {{"%.2f" | format(district.polling_worried.max_result) }}%
+                in {{district.polling_worried.max_county}}
+            </li>
+        </ul>
+    </li>
+    <li>
+        <p>Support regulating CO2 as a pollutant:</p>
+        <ul>
+            <li>
+                {{"%.2f" | format(district.polling_regulate.min_result) }}%
+                in {{district.polling_regulate.min_county}}, and
+                {{"%.2f" | format(district.polling_regulate.max_result) }}%
+                in {{district.polling_regulate.max_county}}
+            </li>
+        </ul>
+    </li>
+    <li>
+        <p>Support tax rebates for people who purchase energy-efficient vehicles or solar panels:</p>
+        <ul>
+            <li>
+                {{"%.2f" | format(district.polling_rebates.min_result) }}%
+                in {{district.polling_rebates.min_county}}, and
+                {{"%.2f" | format(district.polling_rebates.max_result) }}%
+                in {{district.polling_rebates.max_county}}
+            </li>
+        </ul>
+    </li>
+</ul>
+{% for vote in district.votes %}
+<p>{{ vote }}</p>
+{% endfor%}
+{% endblock %}

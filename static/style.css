@@ -1,0 +1,10 @@
+@page { size: letter }
+
+body {
+    padding: 2rem;
+    background-color: #F5F5F5;
+}
+
+h1 {
+    font-family: monospace
+}
