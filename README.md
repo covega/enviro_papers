@@ -17,8 +17,8 @@ We're using Python 2.7 and Jupyter Notebook.
 
 ```bash
 # Enter virtual environment and install dependencies
-virtualenv .
-source bin/activate
+virtualenv venv
+source venv/bin/activate
 pip3 install -r requirements.txt
 
 # Open Notebook

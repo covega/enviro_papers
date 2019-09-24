@@ -1,11 +1,8 @@
 import os, os.path
 import pandas as pd
-from models import CountyPoll, CountyFragment
-from config import DATA_DIR
+from app.models import CountyPoll, CountyFragment
+from app.config import POLLING_DATASETS
 
-COUNTY_POLLING_INFO = [
-    ("VA", os.path.join(DATA_DIR, "Yale_Polling.csv"))
-]
 
 def read_polling_data(session, state_abbr, csv_path):
     polls_created = 0
@@ -25,11 +22,11 @@ def read_polling_data(session, state_abbr, csv_path):
                         percent_rebates=percent_rebates)
         session.add(cp)
         polls_created += 1
-        print("Polls created: %d" % polls_created, end="\r")
+        print("Polling records created: %d" % polls_created, end="\r")
 
     print()
     session.commit()
 
 def create_polling(session):
-    for state_abbr, csv_path in COUNTY_POLLING_INFO:
+    for state_abbr, csv_path in POLLING_DATASETS:
         read_polling_data(session, state_abbr, csv_path)

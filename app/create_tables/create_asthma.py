@@ -1,11 +1,8 @@
 import os, os.path
 import pandas as pd
-from models import CountyAsthmaCounts, CountyFragment
-from config import DATA_DIR
+from app.models import CountyAsthmaCounts, CountyFragment
+from app.config import ASTHMA_DATASETS
 
-COUNTY_ASTHMA_INFO = [
-    ("VA", os.path.join(DATA_DIR, 'Asthma_Data_ALA_6.26.2019.csv'))
-]
 
 def read_asthma_data(session, state_abbr, csv_path):
     asthma_created = 0
@@ -13,11 +10,11 @@ def read_asthma_data(session, state_abbr, csv_path):
 
     for _, row in county_asthma_info.iterrows():
         raw_fullname = row['County']
+        county_shortcode = CountyFragment.to_shortcode(state_abbr, raw_fullname)
 
-        if raw_fullname == "TOTAL":
+        if county_shortcode == "VA-total":
             continue # skip last row
 
-        county_shortcode = CountyFragment.to_shortcode(state_abbr, raw_fullname)
         num_children = int(row['Pediatric Asthma'].replace(',', ''))
         num_adults = int(row['Adult Asthma'].replace(',', ''))
         ac = CountyAsthmaCounts(county_shortcode=county_shortcode,
@@ -31,5 +28,5 @@ def read_asthma_data(session, state_abbr, csv_path):
     session.commit()
 
 def create_asthma(session):
-    for state_abbr, csv_path in COUNTY_ASTHMA_INFO:
+    for state_abbr, csv_path in ASTHMA_DATASETS:
         read_asthma_data(session, state_abbr, csv_path)

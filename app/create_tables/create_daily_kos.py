@@ -1,22 +1,17 @@
 import os, os.path
 import pandas as pd
-from models import State, District, CountyFragment, DistrictType
-from config import DATA_DIR
-
-SS_FOLDER = os.path.join(DATA_DIR, 'daily-kos/counties-to-state-senate-districts/')
-SH_FOLDER = os.path.join(DATA_DIR, 'daily-kos/counties-to-state-house-districts/')
-SS_KEYS = ("County", "SD #", "SD Pop.\nin County", "% of County\nin SD")
-SH_KEYS = ("County.2", "HD #", "HD Pop.\nin County", "% of County\nin HD")
+from app.models import State, District, CountyFragment, DistrictType
+from app.config import DailyKosDatasets as DK
 
 
 def create_states(session):
     """Yields states"""
     states_created = 0
-    for filename in os.listdir(SS_FOLDER):
+    for filename in os.listdir(DK.SS_FOLDER):
         state_abbr = os.path.splitext(filename)[0]
         session.add(State(abbr=state_abbr))
         states_created += 1
-        print("States created: %d" % states_created, end="\r")
+        print("State records created: %d" % states_created, end="\r")
 
     print()
     session.commit()
@@ -61,7 +56,7 @@ def create_counties_and_districts(session, folder, keys, district_type):
                                     district_type=district_type,
                                     district_number=district_num)
                 districts_created += 1
-                print("%s Districts created: %d Counties created: %d" % (district_type.value, districts_created, counties_created), end="\r")
+                print("%s District records created: %d County fragment records created: %d" % (district_type.value, districts_created, counties_created), end="\r")
                 session.add(district)
 
             county_shortcode = CountyFragment.to_shortcode(state_abbr,
@@ -72,7 +67,7 @@ def create_counties_and_districts(session, folder, keys, district_type):
                                 population=county_population,
                                 percent_of_whole=county_percent_of_whole)
             counties_created += 1
-            print("%s Districts created: %d Counties created: %d" % (district_type.value, districts_created, counties_created), end="\r")
+            print("%s District records created: %d County fragment records created: %d" % (district_type.value, districts_created, counties_created), end="\r")
             session.add(cf)
 
     print()
@@ -80,6 +75,6 @@ def create_counties_and_districts(session, folder, keys, district_type):
 
 def create_daily_kos(session):
     create_states(session)
-    create_counties_and_districts(session, SS_FOLDER, SS_KEYS, DistrictType.STATE_SENATE)
-    create_counties_and_districts(session, SH_FOLDER, SH_KEYS, DistrictType.STATE_HOUSE)
+    create_counties_and_districts(session, DK.SS_FOLDER, DK.SS_KEYS, DistrictType.STATE_SENATE)
+    create_counties_and_districts(session, DK.SH_FOLDER, DK.SH_KEYS, DistrictType.STATE_HOUSE)
 

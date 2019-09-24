@@ -1,16 +1,9 @@
 import os, os.path
 import re
 import pandas as pd
-from models import VotingRecord, District, DistrictType
-from config import DATA_DIR
+from app.models import VotingRecord, District, DistrictType
+from app.config import VOTING_DATASETS
 
-VOTING_INFO = [
-    (
-        "VA",
-        os.path.join(DATA_DIR, 'vote_history.csv'),
-        os.path.join(DATA_DIR, 'Names_Districts_Counties.csv'),
-    ),
-]
 
 def read_voting_data(session, state_abbr, voting_csv_path, names_csv_path):
     votes_created = 0
@@ -55,7 +48,7 @@ def read_voting_data(session, state_abbr, voting_csv_path, names_csv_path):
     session.commit()
 
 def create_voting(session):
-    for state_abbr, voting_csv_path, names_csv_path in VOTING_INFO:
+    for state_abbr, voting_csv_path, names_csv_path in VOTING_DATASETS:
         read_voting_data(session, state_abbr, voting_csv_path, names_csv_path)
 
 

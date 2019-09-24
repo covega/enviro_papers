@@ -1,5 +1,5 @@
 from sqlalchemy import Column, Integer, Float, ForeignKey, Sequence, String, Enum
-from models import Base
+from app.models import Base
 import enum
 import re
 
