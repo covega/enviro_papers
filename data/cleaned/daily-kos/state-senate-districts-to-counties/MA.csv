@@ -1,0 +1,79 @@
+,SD #.1,County.1,"County Pop.
+in SD","% of SD
+in County"
+0,1st Suffolk,Suffolk,158774.0,1.0
+1,2nd Suffolk,Suffolk,156023.0,1.0
+2,Hampden,Hampden,157219.0,1.0
+3,"Berkshire, Hampshire, Franklin & Hampden",Berkshire,131219.0,0.842
+4,"Berkshire, Hampshire, Franklin & Hampden",Franklin,10252.0,0.066
+5,"Berkshire, Hampshire, Franklin & Hampden",Hampden,2570.0,0.016
+6,"Berkshire, Hampshire, Franklin & Hampden",Hampshire,11742.0,0.075
+7,2nd Hampden & Hampshire,Hampden,135787.0,0.861
+8,2nd Hampden & Hampshire,Hampshire,21845.0,0.139
+9,"Hampshire, Franklin & Worcester",Franklin,61120.0,0.392
+10,"Hampshire, Franklin & Worcester",Hampshire,93732.0,0.6
+11,"Hampshire, Franklin & Worcester",Worcester,1258.0,0.008
+12,1st Hampden & Hampshire,Hampden,139286.0,0.87
+13,1st Hampden & Hampshire,Hampshire,20889.0,0.13
+14,"Worcester, Hampden, Hampshire & Middlesex",Hampden,28628.0,0.177
+15,"Worcester, Hampden, Hampshire & Middlesex",Hampshire,9872.0,0.061
+16,"Worcester, Hampden, Hampshire & Middlesex",Middlesex,3074.0,0.019
+17,"Worcester, Hampden, Hampshire & Middlesex",Worcester,120370.0,0.743
+18,Worcester & Middlesex,Middlesex,8926.0,0.056
+19,Worcester & Middlesex,Worcester,149161.0,0.944
+20,1st Worcester,Worcester,169221.0,1.0
+21,2nd Worcester,Worcester,171089.0,1.0
+22,Worcester & Norfolk,Norfolk,16332.0,0.099
+23,Worcester & Norfolk,Worcester,149199.0,0.901
+24,1st Middlesex,Middlesex,165084.0,1.0
+25,Middlesex & Worcester,Middlesex,131746.0,0.775
+26,Middlesex & Worcester,Worcester,38254.0,0.225
+27,2nd Middlesex & Norfolk,Middlesex,133154.0,0.843
+28,2nd Middlesex & Norfolk,Norfolk,24712.0,0.157
+29,3rd Middlesex,Middlesex,169018.0,1.0
+30,"Norfolk, Bristol & Middlesex",Bristol,46907.0,0.293
+31,"Norfolk, Bristol & Middlesex",Middlesex,30348.0,0.189
+32,"Norfolk, Bristol & Middlesex",Norfolk,83013.0,0.518
+33,2nd Essex & Middlesex,Essex,109581.0,0.652
+34,2nd Essex & Middlesex,Middlesex,58418.0,0.348
+35,1st Essex,Essex,170732.0,1.0
+36,1st Essex & Middlesex,Essex,132617.0,0.781
+37,1st Essex & Middlesex,Middlesex,37217.0,0.219
+38,2nd Essex,Essex,164671.0,1.0
+39,3rd Essex,Essex,165558.0,1.0
+40,3rd Essex,Suffolk,9.0,0.0
+41,5th Middlesex,Middlesex,168367.0,1.0
+42,4th Middlesex,Middlesex,166631.0,1.0
+43,2nd Middlesex,Middlesex,171059.0,1.0
+44,Middlesex & Suffolk,Middlesex,96007.0,0.56
+45,Middlesex & Suffolk,Suffolk,75373.0,0.44
+46,1st Suffolk & Middlesex,Middlesex,22246.0,0.13
+47,1st Suffolk & Middlesex,Suffolk,148849.0,0.87
+48,2nd Suffolk & Middlesex,Middlesex,56644.0,0.33
+49,2nd Suffolk & Middlesex,Suffolk,115124.0,0.67
+50,1st Middlesex & Norfolk,Middlesex,85146.0,0.528
+51,1st Middlesex & Norfolk,Norfolk,76015.0,0.472
+52,Norfolk & Suffolk,Norfolk,88122.0,0.565
+53,Norfolk & Suffolk,Suffolk,67871.0,0.435
+54,Bristol & Norfolk,Bristol,92943.0,0.594
+55,Bristol & Norfolk,Norfolk,63543.0,0.406
+56,"Norfolk, Bristol & Plymouth",Bristol,15436.0,0.099
+57,"Norfolk, Bristol & Plymouth",Norfolk,130965.0,0.836
+58,"Norfolk, Bristol & Plymouth",Plymouth,10240.0,0.065
+59,Norfolk & Plymouth,Norfolk,126863.0,0.791
+60,Norfolk & Plymouth,Plymouth,33474.0,0.209
+61,Plymouth & Norfolk,Norfolk,61285.0,0.377
+62,Plymouth & Norfolk,Plymouth,101280.0,0.623
+63,2nd Plymouth & Bristol,Bristol,7676.0,0.048
+64,2nd Plymouth & Bristol,Plymouth,153195.0,0.952
+65,1st Plymouth & Bristol,Bristol,82754.0,0.485
+66,1st Plymouth & Bristol,Plymouth,87917.0,0.515
+67,1st Bristol & Plymouth,Bristol,147289.0,0.903
+68,1st Bristol & Plymouth,Plymouth,15834.0,0.097
+69,2nd Bristol & Plymouth,Bristol,155280.0,0.963
+70,2nd Bristol & Plymouth,Plymouth,6045.0,0.037
+71,Plymouth & Barnstable,Barnstable,71960.0,0.453
+72,Plymouth & Barnstable,Plymouth,86934.0,0.547
+73,Cape & Islands,Barnstable,143928.0,0.843
+74,Cape & Islands,Dukes,16535.0,0.097
+75,Cape & Islands,Nantucket,10172.0,0.06

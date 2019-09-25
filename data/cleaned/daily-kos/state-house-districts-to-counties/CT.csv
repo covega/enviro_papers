@@ -1,0 +1,175 @@
+,HD #.1,County.3,"County Pop.
+in HD","% of HD
+in County"
+0,1,Hartford,23038,1.0
+1,2,Fairfield,23664,1.0
+2,3,Hartford,22980,1.0
+3,4,Hartford,23200,1.0
+4,5,Hartford,23000,1.0
+5,6,Hartford,23067,1.0
+6,7,Hartford,23027,1.0
+7,8,Tolland,24172,1.0
+8,9,Hartford,24215,1.0
+9,10,Hartford,24291,1.0
+10,11,Hartford,24305,1.0
+11,12,Hartford,24367,1.0
+12,13,Hartford,24299,1.0
+13,14,Hartford,23913,1.0
+14,15,Hartford,22961,1.0
+15,16,Hartford,23502,1.0
+16,17,Hartford,23454,1.0
+17,18,Hartford,23069,1.0
+18,19,Hartford,23715,1.0
+19,20,Hartford,23170,1.0
+20,21,Hartford,23599,1.0
+21,22,Hartford,23670,1.0
+22,23,Middlesex,13280,0.57
+23,23,New London,10009,0.43
+24,24,Hartford,23837,1.0
+25,25,Hartford,23741,1.0
+26,26,Hartford,23748,1.0
+27,27,Hartford,24351,1.0
+28,28,Hartford,24184,1.0
+29,29,Hartford,24330,1.0
+30,30,Hartford,24312,1.0
+31,31,Hartford,24239,1.0
+32,32,Middlesex,23513,1.0
+33,33,Middlesex,23863,1.0
+34,34,Middlesex,22085,0.953
+35,34,New London,1096,0.047
+36,35,Middlesex,23685,1.0
+37,36,Middlesex,23652,1.0
+38,37,New London,23310,1.0
+39,38,New London,23860,1.0
+40,39,New London,23526,1.0
+41,40,New London,22754,1.0
+42,41,New London,23972,1.0
+43,42,New London,23663,1.0
+44,43,New London,23842,1.0
+45,44,Windham,24020,1.0
+46,45,New London,16153,0.673
+47,45,Windham,7849,0.327
+48,46,New London,24344,1.0
+49,47,New London,13340,0.547
+50,47,Windham,11026,0.453
+51,48,New London,19850,0.83
+52,48,Tolland,2754,0.115
+53,48,Windham,1319,0.055
+54,49,Windham,23949,1.0
+55,50,Tolland,854,0.037
+56,50,Windham,22170,0.963
+57,51,Windham,23778,1.0
+58,52,Tolland,23531,1.0
+59,53,Tolland,19815,0.821
+60,53,Windham,4317,0.179
+61,54,Tolland,23792,1.0
+62,55,Hartford,6404,0.263
+63,55,Tolland,17966,0.737
+64,56,Tolland,24205,1.0
+65,57,Hartford,7623,0.328
+66,57,Tolland,15602,0.672
+67,58,Hartford,23879,1.0
+68,59,Hartford,24314,1.0
+69,60,Hartford,22965,1.0
+70,61,Hartford,23448,1.0
+71,62,Hartford,13396,0.554
+72,62,Litchfield,10769,0.446
+73,63,Litchfield,22970,1.0
+74,64,Litchfield,23168,1.0
+75,65,Litchfield,23128,1.0
+76,66,Litchfield,23457,1.0
+77,67,Litchfield,23716,1.0
+78,68,Litchfield,23574,1.0
+79,69,Litchfield,7567,0.313
+80,69,New Haven,16625,0.687
+81,70,New Haven,23582,1.0
+82,71,New Haven,23429,1.0
+83,72,New Haven,23262,1.0
+84,73,New Haven,23937,1.0
+85,74,New Haven,24139,1.0
+86,75,New Haven,23174,1.0
+87,76,Hartford,9301,0.384
+88,76,Litchfield,14909,0.616
+89,77,Hartford,24289,1.0
+90,78,Hartford,11863,0.492
+91,78,Litchfield,12243,0.508
+92,79,Hartford,24325,1.0
+93,80,Hartford,6297,0.274
+94,80,New Haven,16680,0.726
+95,81,Hartford,22965,1.0
+96,82,Middlesex,4425,0.186
+97,82,New Haven,19386,0.814
+98,83,Hartford,5328,0.228
+99,83,New Haven,18060,0.772
+100,84,New Haven,23422,1.0
+101,85,New Haven,22963,1.0
+102,86,Middlesex,2695,0.117
+103,86,New Haven,20330,0.883
+104,87,New Haven,24093,1.0
+105,88,New Haven,24378,1.0
+106,89,New Haven,23020,1.0
+107,90,New Haven,22959,1.0
+108,91,New Haven,24374,1.0
+109,92,New Haven,24195,1.0
+110,93,New Haven,24165,1.0
+111,94,New Haven,24376,1.0
+112,95,New Haven,24328,1.0
+113,96,New Haven,24371,1.0
+114,97,New Haven,24372,1.0
+115,98,New Haven,22961,1.0
+116,99,New Haven,24374,1.0
+117,100,Middlesex,23785,1.0
+118,101,Middlesex,4693,0.204
+119,101,New Haven,18269,0.796
+120,102,New Haven,22967,1.0
+121,103,Hartford,4033,0.175
+122,103,New Haven,18972,0.825
+123,104,New Haven,24249,1.0
+124,105,New Haven,24041,1.0
+125,106,Fairfield,22971,1.0
+126,107,Fairfield,24008,1.0
+127,108,Fairfield,19105,0.812
+128,108,Litchfield,4426,0.188
+129,109,Fairfield,24064,1.0
+130,110,Fairfield,24248,1.0
+131,111,Fairfield,23485,1.0
+132,112,Fairfield,22990,1.0
+133,113,Fairfield,23093,1.0
+134,114,New Haven,22983,1.0
+135,115,New Haven,22991,1.0
+136,116,New Haven,23101,1.0
+137,117,New Haven,23278,1.0
+138,118,New Haven,23151,1.0
+139,119,New Haven,23278,1.0
+140,120,Fairfield,23355,1.0
+141,121,Fairfield,23298,1.0
+142,122,Fairfield,23099,1.0
+143,123,Fairfield,23817,1.0
+144,124,Fairfield,24105,1.0
+145,125,Fairfield,22962,1.0
+146,126,Fairfield,24182,1.0
+147,127,Fairfield,23949,1.0
+148,128,Fairfield,23865,1.0
+149,129,Fairfield,24361,1.0
+150,130,Fairfield,23767,1.0
+151,131,New Haven,24242,1.0
+152,132,Fairfield,23535,1.0
+153,133,Fairfield,22991,1.0
+154,134,Fairfield,23177,1.0
+155,135,Fairfield,23691,1.0
+156,136,Fairfield,24340,1.0
+157,137,Fairfield,24341,1.0
+158,138,Fairfield,23669,1.0
+159,139,New London,24336,1.0
+160,140,Fairfield,23638,1.0
+161,141,Fairfield,23577,1.0
+162,142,Fairfield,24126,1.0
+163,143,Fairfield,24135,1.0
+164,144,Fairfield,23269,1.0
+165,145,Fairfield,23372,1.0
+166,146,Fairfield,24258,1.0
+167,147,Fairfield,23173,1.0
+168,148,Fairfield,24227,1.0
+169,149,Fairfield,22979,1.0
+170,150,Fairfield,22966,1.0
+171,151,Fairfield,22977,1.0

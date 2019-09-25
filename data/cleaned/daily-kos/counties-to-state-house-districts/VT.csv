@@ -1,0 +1,130 @@
+,County.2,HD #,"HD Pop.
+in County","% of County
+in HD"
+0,Addison,Addison 1,8496,0.231
+1,Addison,Addison 2,4496,0.122
+2,Addison,Addison 3,7897,0.214
+3,Addison,Addison 4,8922,0.242
+4,Addison,Addison 5,3778,0.103
+5,Addison,Addison-Rutland,2934,0.08
+6,Addison,Orange-Washington-Addison,298,0.008
+7,Bennington,Bennington 1,3951,0.106
+8,Bennington,Bennington 3,3840,0.103
+9,Bennington,Bennington 4,7827,0.211
+10,Bennington,Bennington-Rutland,2564,0.069
+11,Bennington,Bennington 2-1,7997,0.215
+12,Bennington,Bennington 2-2,7767,0.209
+13,Bennington,Rutland-Bennington,714,0.019
+14,Bennington,Windham-Bennington-Windsor,769,0.021
+15,Bennington,Windham-Bennington,1696,0.046
+16,Caledonia,Caledonia 1,4162,0.133
+17,Caledonia,Caledonia 2,4161,0.133
+18,Caledonia,Caledonia 3,7603,0.243
+19,Caledonia,Caledonia 4,8763,0.281
+20,Caledonia,Caledonia-Washington,2928,0.094
+21,Caledonia,Essex-Caledonia,493,0.016
+22,Caledonia,Essex-Caledonia-Orleans,581,0.019
+23,Caledonia,Orange-Caledonia,1022,0.033
+24,Caledonia,Orleans-Caledonia,1514,0.048
+25,Chittenden,Chittenden 1,4081,0.026
+26,Chittenden,Chittenden 2,8698,0.056
+27,Chittenden,Chittenden 3,8025,0.051
+28,Chittenden,Chittenden 10,9039,0.058
+29,Chittenden,Chittenden 4-1,3787,0.024
+30,Chittenden,Chittenden 4-2,4363,0.028
+31,Chittenden,Chittenden 5-1,3843,0.025
+32,Chittenden,Chittenden 5-2,3975,0.025
+33,Chittenden,Chittenden 6-1,8257,0.053
+34,Chittenden,Chittenden 6-2,3879,0.025
+35,Chittenden,Chittenden 6-3,8513,0.054
+36,Chittenden,Chittenden 6-4,9706,0.062
+37,Chittenden,Chittenden 6-5,8623,0.055
+38,Chittenden,Chittenden 6-6,3173,0.02
+39,Chittenden,Chittenden 6-7,7533,0.048
+40,Chittenden,Chittenden 7-1,4533,0.029
+41,Chittenden,Chittenden 7-2,4299,0.027
+42,Chittenden,Chittenden 7-3,4518,0.029
+43,Chittenden,Chittenden 7-4,4554,0.029
+44,Chittenden,Chittenden 8-1,8199,0.052
+45,Chittenden,Chittenden 8-2,9070,0.058
+46,Chittenden,Chittenden 8-3,4347,0.028
+47,Chittenden,Chittenden 9-1,9012,0.058
+48,Chittenden,Chittenden 9-2,8055,0.051
+49,Chittenden,Grand Isle-Chittenden,1313,0.008
+50,Chittenden,Washington-Chittenden,3150,0.02
+51,Essex,Essex-Caledonia,3268,0.518
+52,Essex,Essex-Caledonia-Orleans,3038,0.482
+53,Franklin,Franklin 1,4515,0.095
+54,Franklin,Franklin 2,4285,0.09
+55,Franklin,Franklin 4,8617,0.18
+56,Franklin,Franklin 5,8940,0.187
+57,Franklin,Franklin 6,4490,0.094
+58,Franklin,Franklin 7,3982,0.083
+59,Franklin,Franklin 3-1,8583,0.18
+60,Franklin,Franklin 3-2,4334,0.091
+61,Grand Isle,Grand Isle-Chittenden,6970,1.0
+62,Lamoille,Lamoille 1,4314,0.176
+63,Lamoille,Lamoille 2,8424,0.344
+64,Lamoille,Lamoille 3,4332,0.177
+65,Lamoille,Lamoille-Washington,6082,0.248
+66,Lamoille,Orleans-Lamoille,1323,0.054
+67,Orange,Orange-Caledonia,3389,0.117
+68,Orange,Orange 1,8835,0.305
+69,Orange,Orange 2,4426,0.153
+70,Orange,Orange-Washington-Addison,7316,0.253
+71,Orange,Windsor-Orange 1,1284,0.044
+72,Orange,Windsor-Orange 2,3686,0.127
+73,Orleans,Essex-Caledonia-Orleans,350,0.013
+74,Orleans,Orleans 1,8010,0.294
+75,Orleans,Orleans 2,8843,0.325
+76,Orleans,Orleans-Lamoille,3187,0.117
+77,Orleans,Orleans-Caledonia,6841,0.251
+78,Rutland,Addison-Rutland,1056,0.017
+79,Rutland,Bennington-Rutland,1566,0.025
+80,Rutland,Rutland 1,3864,0.063
+81,Rutland,Rutland 2,8871,0.144
+82,Rutland,Rutland 3,8421,0.137
+83,Rutland,Rutland 4,4054,0.066
+84,Rutland,Rutland 6,7517,0.122
+85,Rutland,Rutland-Bennington,3831,0.062
+86,Rutland,Rutland-Windsor 1,3128,0.051
+87,Rutland,Rutland 5-1,4134,0.067
+88,Rutland,Rutland 5-2,3998,0.065
+89,Rutland,Rutland 5-3,4099,0.066
+90,Rutland,Rutland 5-4,4264,0.069
+91,Rutland,Rutland-Windsor 2,2293,0.037
+92,Rutland,Windsor-Rutland,546,0.009
+93,Washington,Caledonia-Washington,1433,0.024
+94,Washington,Lamoille-Washington,1904,0.032
+95,Washington,Orange-Washington-Addison,691,0.012
+96,Washington,Washington 1,9094,0.153
+97,Washington,Washington 2,7924,0.133
+98,Washington,Washington 3,9052,0.152
+99,Washington,Washington 4,7855,0.132
+100,Washington,Washington 5,4307,0.072
+101,Washington,Washington 6,4438,0.075
+102,Washington,Washington 7,7772,0.131
+103,Washington,Washington-Chittenden,5064,0.085
+104,Windham,Windham 1,4327,0.097
+105,Windham,Windham 3,7575,0.17
+106,Windham,Windham 4,7521,0.169
+107,Windham,Windham 5,4036,0.091
+108,Windham,Windham 6,3912,0.088
+109,Windham,Windham 2-1,4198,0.094
+110,Windham,Windham 2-2,3932,0.088
+111,Windham,Windham 2-3,3916,0.088
+112,Windham,Windham-Bennington-Windsor,3020,0.068
+113,Windham,Windham-Bennington,2076,0.047
+114,Windsor,Rutland-Windsor 1,936,0.017
+115,Windsor,Rutland-Windsor 2,1963,0.035
+116,Windsor,Windham-Bennington-Windsor,566,0.01
+117,Windsor,Windsor 1,8045,0.142
+118,Windsor,Windsor 2,4192,0.074
+119,Windsor,Windsor 5,4333,0.076
+120,Windsor,Windsor-Rutland,3905,0.069
+121,Windsor,Windsor 3-1,4196,0.074
+122,Windsor,Windsor 3-2,9042,0.16
+123,Windsor,Windsor 4-1,3882,0.069
+124,Windsor,Windsor 4-2,7921,0.14
+125,Windsor,Windsor-Orange 1,2773,0.049
+126,Windsor,Windsor-Orange 2,4916,0.087

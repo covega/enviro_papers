@@ -1,0 +1,154 @@
+,County,CD #,"CD Pop.
+in County","% of County
+in CD"
+0,Accomack,2,33164,1.0
+1,Albemarle,5,98970,1.0
+2,Alleghany,9,16250,1.0
+3,Amelia,7,12690,1.0
+4,Amherst,6,32353,1.0
+5,Appomattox,5,14973,1.0
+6,Arlington,8,207627,1.0
+7,Augusta,6,73750,1.0
+8,Bath,6,4731,1.0
+9,Bedford,5,45209,0.604
+10,Bedford,6,29689,0.396
+11,Bland,9,6824,1.0
+12,Botetourt,6,33148,1.0
+13,Brunswick,5,17434,1.0
+14,Buchanan,9,24098,1.0
+15,Buckingham,5,17146,1.0
+16,Campbell,5,54842,1.0
+17,Caroline,1,28545,1.0
+18,Carroll,9,30042,1.0
+19,Charles City,4,7256,1.0
+20,Charlotte,5,12586,1.0
+21,Chesterfield,4,95473,0.302
+22,Chesterfield,7,220763,0.698
+23,Clarke,10,14034,1.0
+24,Craig,9,5190,1.0
+25,Culpeper,7,46689,1.0
+26,Cumberland,5,10052,1.0
+27,Dickenson,9,15903,1.0
+28,Dinwiddie,4,28001,1.0
+29,Essex,1,11151,1.0
+30,Fairfax,8,367441,0.34
+31,Fairfax,10,186406,0.172
+32,Fairfax,11,527879,0.488
+33,Fauquier,1,14762,0.226
+34,Fauquier,5,50441,0.774
+35,Floyd,9,15279,1.0
+36,Fluvanna,5,25691,1.0
+37,Franklin,5,56159,1.0
+38,Frederick,10,78305,1.0
+39,Giles,9,17286,1.0
+40,Gloucester,1,36858,1.0
+41,Goochland,7,21717,1.0
+42,Grayson,9,15533,1.0
+43,Greene,5,18403,1.0
+44,Greensville,4,12243,1.0
+45,Halifax,5,36241,1.0
+46,Hanover,1,99863,1.0
+47,Henrico,4,84198,0.274
+48,Henrico,7,222737,0.726
+49,Henry,5,14472,0.267
+50,Henry,9,39679,0.733
+51,Highland,6,2321,1.0
+52,Isle of Wight,3,35270,1.0
+53,James City,1,50453,0.753
+54,James City,2,16556,0.247
+55,King and Queen,1,6945,1.0
+56,King George,1,23584,1.0
+57,King William,1,15935,1.0
+58,Lancaster,1,11391,1.0
+59,Lee,9,25587,1.0
+60,Loudoun,10,312311,1.0
+61,Louisa,7,33153,1.0
+62,Lunenburg,5,12914,1.0
+63,Madison,5,13308,1.0
+64,Mathews,1,8978,1.0
+65,Mecklenburg,5,32727,1.0
+66,Middlesex,1,10959,1.0
+67,Montgomery,9,94392,1.0
+68,Nelson,5,15020,1.0
+69,New Kent,1,18429,1.0
+70,Northampton,2,12389,1.0
+71,Northumberland,1,12330,1.0
+72,Nottoway,7,15853,1.0
+73,Orange,7,33481,1.0
+74,Page,6,24042,1.0
+75,Patrick,9,18490,1.0
+76,Pittsylvania,5,63506,1.0
+77,Powhatan,7,28046,1.0
+78,Prince Edward,5,23368,1.0
+79,Prince George,4,35725,1.0
+80,Prince William,1,167068,0.416
+81,Prince William,10,58012,0.144
+82,Prince William,11,176922,0.44
+83,Pulaski,9,34872,1.0
+84,Rappahannock,5,7373,1.0
+85,Richmond,1,9254,1.0
+86,Roanoke,6,69185,0.749
+87,Roanoke,9,23191,0.251
+88,Rockbridge,6,22307,1.0
+89,Rockingham,6,76314,1.0
+90,Russell,9,28897,1.0
+91,Scott,9,23177,1.0
+92,Shenandoah,6,41993,1.0
+93,Smyth,9,32208,1.0
+94,Southampton,4,18570,1.0
+95,Spotsylvania,1,30160,0.246
+96,Spotsylvania,7,92237,0.754
+97,Stafford,1,128961,1.0
+98,Surry,4,7058,1.0
+99,Sussex,4,12087,1.0
+100,Tazewell,9,45078,1.0
+101,Warren,5,133,0.004
+102,Warren,6,37442,0.996
+103,Washington,9,54876,1.0
+104,Westmoreland,1,17454,1.0
+105,Wise,9,41452,1.0
+106,Wythe,9,29235,1.0
+107,York,2,65464,1.0
+108,Alexandria city,8,139966,1.0
+109,Bristol city,9,17835,1.0
+110,Buena Vista city,6,6650,1.0
+111,Charlottesville city,5,43475,1.0
+112,Chesapeake city,3,110405,0.497
+113,Chesapeake city,4,111804,0.503
+114,Colonial Heights city,4,17411,1.0
+115,Covington city,9,5961,1.0
+116,Danville city,5,43055,1.0
+117,Emporia city,4,5927,1.0
+118,Fairfax city,11,22565,1.0
+119,Falls Church city,8,12332,1.0
+120,Franklin city,3,8582,1.0
+121,Fredericksburg city,1,24286,1.0
+122,Galax city,9,7042,1.0
+123,Hampton city,2,33630,0.245
+124,Hampton city,3,103806,0.755
+125,Harrisonburg city,6,48914,1.0
+126,Hopewell city,4,22591,1.0
+127,Lexington city,6,7042,1.0
+128,Lynchburg city,6,75568,1.0
+129,Manassas city,10,37821,1.0
+130,Manassas Park city,10,14273,1.0
+131,Martinsville city,9,13821,1.0
+132,Newport News city,2,32,0.0
+133,Newport News city,3,180687,1.0
+134,Norfolk city,2,82672,0.34
+135,Norfolk city,3,160131,0.66
+136,Norton city,9,3958,1.0
+137,Petersburg city,4,32420,1.0
+138,Poquoson city,2,12150,1.0
+139,Portsmouth city,3,95535,1.0
+140,Radford city,9,16408,1.0
+141,Richmond city,4,204214,1.0
+142,Roanoke city,6,97032,1.0
+143,Salem city,9,24802,1.0
+144,Staunton city,6,23746,1.0
+145,Suffolk city,3,52197,0.617
+146,Suffolk city,4,32388,0.383
+147,Virginia Beach city,2,437994,1.0
+148,Waynesboro city,6,21006,1.0
+149,Williamsburg city,2,14068,1.0
+150,Winchester city,10,26203,1.0
