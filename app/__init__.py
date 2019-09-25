@@ -19,9 +19,9 @@ class EnvironmentPapersDatabase:
         self.session = Session()
 
     def create_tables(self):
-        Base.metadata.drop_all(self.db_engine)
+        # Base.metadata.drop_all(self.db_engine)
         Base.metadata.create_all(self.db_engine)
-        create_daily_kos(self.session)
+        # create_daily_kos(self.session)
         create_polling(self.session)
         create_asthma(self.session)
         create_voting(self.session)

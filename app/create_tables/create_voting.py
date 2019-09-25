@@ -1,13 +1,16 @@
 import os, os.path
 import re
 import pandas as pd
-from app.models import VotingRecord, District, DistrictType
-from app.config import VOTING_DATASETS
+from app.models import (VotingRecord, Vote, Bill, District, DistrictType,
+                        VotingClassification, Party, VotingAction)
+from app.config import (VOTING_DATASETS, VOTING_SENTENCES_DATASETS,
+                        VotingKeys as VK)
 
+VOTING_CHAMBERS = [('House', DistrictType.STATE_HOUSE),
+                   ('Senate', DistrictType.STATE_SENATE)]
 
-def read_voting_data(session, state_abbr, voting_csv_path, names_csv_path):
-    votes_created = 0
-    county_voting_info = pd.read_csv(voting_csv_path, encoding="ISO-8859-1")
+def read_voting_sentences(session, state_abbr, voting_csv_path, names_csv_path):
+    county_voting_info = pd.read_csv(voting_csv_path, encoding="ISO-88591")
     names_districts_info = pd.read_csv(names_csv_path, encoding="ISO-8859-1")
 
     candidate_fullnames = [
@@ -47,18 +50,96 @@ def read_voting_data(session, state_abbr, voting_csv_path, names_csv_path):
     print()
     session.commit()
 
+
+def read_voting_data(session, state_abbr, datasets):
+    session.query(Bill).delete()
+    session.query(Vote).delete()
+    bills_created = 0
+    votes_created = 0
+
+    for xlsx_path in datasets:
+        df = pd.read_excel(xlsx_path, sheet_name=None)
+
+        bills_sheet = df["Votes"]
+        bills = {}
+
+        for _, row in bills_sheet.iterrows():
+            bill_id = row[VK.BILL]
+            bill_no = row[VK.BILL_NO]
+            bill_title = row[VK.BILL_TITLE]
+            bill_pro_env = VotingAction.fuzzy_cast(row[VK.BILL_PRO_ENV])
+            bill_details = row[VK.BILL_DETAILS]
+            try:
+                bill_outcome = row[VK.BILL_OUTCOME]
+            except KeyError:
+                pass
+            b = Bill(state=state_abbr,
+                     pro_environment_decision=bill_pro_env,
+                     title=bill_title,
+                     code=bill_no,
+                     description=bill_details,
+                     outcome=bill_outcome)
+
+            bills[bill_id] = b # For use in this function only
+            session.add(b) # Save to db
+            bills_created += 1
+            print("Voting records created: %d  Bill records created: %d" % (
+                  votes_created, bills_created), end="\r")
+
+        session.commit()
+
+        for sheet_name, district_type in VOTING_CHAMBERS:
+            sheet_content = df[sheet_name]
+            for _, row in sheet_content.iterrows():
+                state = row[VK.STATE]
+                year = int(row[VK.YEAR])
+                district_number = int(row[VK.DISTRICT])
+                legislator_name = row[VK.LEGISLATOR_NAME]
+                year_score = None
+                party = None
+
+                try:
+                    party = Party(row[VK.PARTY])
+                except ValueError:
+                    pass
+
+                try:
+                    year_score = float(row[VK.YEAR_SCORE % year])
+                except ValueError:
+                    year_score = None
+
+                lifetime_score = float(row[VK.LIFETIME_SCORE])
+                district_shortcode = District.to_shortcode(state_abbr,
+                                                           district_type,
+                                                           district_number)
+                for key in row.keys():
+                    if key and re.match(VK.BILL_ID, str(key)): # This column is a vote
+                        raw_classification = row[key]
+                        try:
+                            c = VotingClassification(raw_classification)
+                        except ValueError:
+                            # print("Invalid vote classification: '%s'%s" % (
+                            #       raw_classification, ' ' * 20))
+                            c = VotingClassification.UNKNOWN
+                        v = Vote(district_shortcode=district_shortcode,
+                                 legislator_name=legislator_name,
+                                 classification=c,
+                                 party=party,
+                                 year=year,
+                                 year_score=year_score,
+                                 lifetime_score=lifetime_score,
+                                 bill_id=bills[key].id)
+                        votes_created += 1
+                        session.add(v)
+                        print("Voting records created: %d  Bill records created: %d" % (
+                              votes_created, bills_created), end="\r")
+    session.commit()
+    print()
+
+
 def create_voting(session):
-    for state_abbr, voting_csv_path, names_csv_path in VOTING_DATASETS:
-        read_voting_data(session, state_abbr, voting_csv_path, names_csv_path)
+    # for state_abbr, voting_csv_path, names_csv_path in VOTING_SENTENCES_DATASETS:
+    #     read_voting_sentences(session, state_abbr, voting_csv_path, names_csv_path)
 
-
-
-
-
-
-
-
-
-
-
-
+    for state_abbr, datasets in VOTING_DATASETS:
+        read_voting_data(session, state_abbr, datasets)
