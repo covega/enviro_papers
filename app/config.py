@@ -18,7 +18,8 @@ VOTING_DATASETS = [
             os.path.join(DATA_DIR, "voting/TX-scorecard-2017.xlsx"),
             os.path.join(DATA_DIR, "voting/TX-scorecard-2019.xlsx"))),
 
-    ("PA", (os.path.join(DATA_DIR, "voting/PA-scorecard-2015.xlsx"),
+    ("PA", (os.path.join(DATA_DIR, "voting/PA-scorecard-2013.xlsx"),
+            os.path.join(DATA_DIR, "voting/PA-scorecard-2015.xlsx"),
             os.path.join(DATA_DIR, "voting/PA-scorecard-2017.xlsx"))),
 ]
 
