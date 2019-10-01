@@ -22,8 +22,6 @@ def _subquery_for_fn(session, fn):
 
 
 def create_district_polls(session):
-    # Wipe previous rows
-    session.query(DistrictPoll).delete()
     dps_created = 0
 
     # Make subqueries

@@ -2,9 +2,6 @@ from sqlalchemy import func
 from app.models import CountyAsthmaCounts, DistrictAsthmaCounts, CountyFragment
 
 def create_district_astham_counts(session):
-    # Wipe previous rows
-    session.query(DistrictAsthmaCounts).delete()
-
     dacs_created = 0
 
     query = session.query(CountyFragment).\
