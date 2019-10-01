@@ -1,6 +1,7 @@
 import os, os.path
 import re
 import pandas as pd
+from app.util import safe_cast
 from app.models import (VotingRecord, Vote, Bill, District, DistrictType,
                         VotingClassification, Party, VotingAction)
 from app.config import (VOTING_DATASETS, VOTING_SENTENCES_DATASETS,
@@ -52,8 +53,6 @@ def read_voting_sentences(session, state_abbr, voting_csv_path, names_csv_path):
 
 
 def read_voting_data(session, state_abbr, datasets):
-    session.query(Bill).delete()
-    session.query(Vote).delete()
     bills_created = 0
     votes_created = 0
 
@@ -69,10 +68,7 @@ def read_voting_data(session, state_abbr, datasets):
             bill_title = row[VK.BILL_TITLE]
             bill_pro_env = VotingAction.fuzzy_cast(row[VK.BILL_PRO_ENV])
             bill_details = row[VK.BILL_DETAILS]
-            try:
-                bill_outcome = row[VK.BILL_OUTCOME]
-            except KeyError:
-                pass
+            bill_outcome = row.get(VK.BILL_OUTCOME, None)
             b = Bill(state=state_abbr,
                      pro_environment_decision=bill_pro_env,
                      title=bill_title,
@@ -95,20 +91,9 @@ def read_voting_data(session, state_abbr, datasets):
                 year = int(row[VK.YEAR])
                 district_number = int(row[VK.DISTRICT])
                 legislator_name = row[VK.LEGISLATOR_NAME]
-                year_score = None
-                party = None
-
-                try:
-                    party = Party(row[VK.PARTY])
-                except ValueError:
-                    pass
-
-                try:
-                    year_score = float(row[VK.YEAR_SCORE % year])
-                except ValueError:
-                    year_score = None
-
-                lifetime_score = float(row[VK.LIFETIME_SCORE])
+                party = safe_cast(Party, row[VK.PARTY])
+                year_score = safe_cast(float, row[VK.YEAR_SCORE % year])
+                lifetime_score = safe_cast(float, row.get(VK.LIFETIME_SCORE))
                 district_shortcode = District.to_shortcode(state_abbr,
                                                            district_type,
                                                            district_number)

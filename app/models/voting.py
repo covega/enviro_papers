@@ -51,7 +51,7 @@ class Bill(Base):
     state = Column(String(2), ForeignKey('state.abbr'), nullable=False)
     pro_environment_decision = Column(Enum(VotingAction))
     title = Column(String(200), nullable=False)
-    code = Column(String(50), nullable=False)
+    code = Column(String(50))
     description = Column(Text)
     outcome = Column(String(50))
 
