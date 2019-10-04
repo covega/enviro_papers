@@ -47,7 +47,8 @@ jupyter notebook
 ├── papers.db           # Database file
 ├── requirements.txt    # Python packages
 ├── run.py              # Python script that runs the app
-└── scripts             # Scripts run to clean data
+├── scripts             # Scripts run to clean data
+└── venv                # Virtual environment files
 ```
 
 ## Data
