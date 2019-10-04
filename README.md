@@ -19,10 +19,35 @@ We're using Python 2.7 and Jupyter Notebook.
 # Enter virtual environment and install dependencies
 virtualenv venv
 source venv/bin/activate
-pip3 install -r requirements.txt
+pip install -r requirements.txt
+
+# Create SQL database
+python run.py
 
 # Open Notebook
 jupyter notebook
+```
+
+## Directory Structure
+
+```bash
+├── papers.ipynb        # Python Notebook for generating Word docs
+├── README.md           # This README
+├── app/ 
+│   ├── __init__.py     # Runs all app functions
+│   ├── config.py       # Configuration values
+│   ├── create_tables/  # Scripts that import data from 
+│   ├── models/         # SQL table definitions
+│   ├── queries/        # Queries that create district-level data
+│   ├── templates/      # Word templates
+│   └── util.py         # Useful functions
+├── data 
+│   ├── cleaned         # Data intended for import into SQL
+│   └── raw             # Raw data
+├── papers.db           # Database file
+├── requirements.txt    # Python packages
+├── run.py              # Python script that runs the app
+└── scripts             # Scripts run to clean data
 ```
 
 ## Data
@@ -35,9 +60,9 @@ Right now we are only using the [Counties ↔ congressional district corresponde
 # Enter virtual environment and install dependencies
 virtualenv .
 source bin/activate
-pip3 install -r requirements.txt
+pip install -r requirements.txt
 
 # Run the Script
-python3 scripts/process-xlsx.py
+python scripts/clean_daily_kos.py
 ```
 
