@@ -3,7 +3,7 @@ Take datasets on the environment and slot them into candidate specific research 
 
 ## Setup
 
-We're using Python 2.7 and Jupyter Notebook.
+We're using Python 3.6 and Jupyter Notebook.
 
 1. Install [Jupyter Notebook](https://jupyter.readthedocs.io/en/latest/install.html)
 
