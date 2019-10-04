@@ -45,3 +45,6 @@ def clean_daily_kos():
 
             # Write
             sheet_content.to_csv(output_path % sheet_name)
+
+if __name__ == '__main__':
+    clean_daily_kos()
