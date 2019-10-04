@@ -3,8 +3,7 @@ from sqlalchemy.orm import sessionmaker
 from app.models import *
 from app.models import Base
 from app.config import SQLITE
-from app.asthma import create_district_astham_counts
-from app.polling import create_district_polls
+from app.queries import create_district_astham_counts, create_district_polls
 from app.create_tables import (create_daily_kos,
                                create_polling,
                                create_asthma,
