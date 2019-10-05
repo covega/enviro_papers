@@ -4,7 +4,7 @@ from app.models import Base
 import enum
 
 class VotingClassification(enum.Enum):
-    PRO_ENVIRONEMNT = "+" # Vote for the environment
+    PRO_ENVIRONMENT = "+" # Vote for the environment
     ANTI_ENVIRONMENT = "-" # Vote against the environment
     EXCUSED = "E" # Excused from Vote
     ABSENT = "A" # Unexcused Absence from Vote
@@ -75,3 +75,20 @@ class Vote(Base):
     def __repr__(self):
         return "<Vote(district_shortcode='%s', legislator_name='%s')>" % (
             self.district_shortcode, self.legislator_name)
+
+class DistrictIncumbentVote(Base):
+    __tablename__ = 'district_incumbent_vote'
+    id = Column(Integer, Sequence('district_incumbent_vote_id_seq'), primary_key=True)
+    district_shortcode = Column(String(50), ForeignKey('district.shortcode'), nullable=False)
+    legislator_name = Column(String(50), nullable=False)
+    classification = Column(Enum(VotingClassification), nullable=False)
+    bill_id = Column(Integer, ForeignKey('bill.id'), nullable=False)
+    bill_pro_environment_decision = Column(Enum(VotingAction))
+    bill_title = Column(String(200), nullable=False)
+    bill_code = Column(String(50))
+    bill_description = Column(Text)
+    year = Column(Integer, nullable=False)
+
+    def __repr__(self):
+        return "<DistrictIncumbentVote(district_shortcode='%s', legislator_name='%s', bill_id='%d')>" % (
+            self.district_shortcode, self.legislator_name, self.bill_id)

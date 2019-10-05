@@ -126,5 +126,5 @@ def create_voting(session):
     # for state_abbr, voting_csv_path, names_csv_path in VOTING_SENTENCES_DATASETS:
     #     read_voting_sentences(session, state_abbr, voting_csv_path, names_csv_path)
 
-    for state_abbr, datasets in VOTING_DATASETS:
+    for state_abbr, _, datasets in VOTING_DATASETS:
         read_voting_data(session, state_abbr, datasets)
