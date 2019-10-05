@@ -2,6 +2,7 @@ from sqlalchemy import Column, Integer, Float, ForeignKey, Sequence, String, Enu
 from app.models import Base
 import enum
 import re
+import unidecode
 
 
 class DistrictType(enum.Enum):
@@ -31,7 +32,6 @@ class State(Base):
 class District(Base):
     __tablename__ = 'district'
     shortcode = Column(String(50), primary_key=True)
-    fullname = Column(String(50))
     state = Column(String(2), ForeignKey('state.abbr'), nullable=False)
     district_type = Column(Enum(DistrictType))
     district_number = Column(Integer)
@@ -57,7 +57,15 @@ class CountyFragment(Base):
 
     @staticmethod
     def to_shortcode(state_abbr, fullname):
-        fullname_cleaned = re.sub(r"[^a-zA-Z]+", "", fullname).lower()
+        # You better believe that ñ caused problems for a bit
+        fullname_unaccented = unidecode.unidecode(fullname)
+
+        # Normalize
+        fullname_normalized = re.sub(r"[^\w]+", "", fullname_unaccented).lower()
+
+        # Remove descriptor words that are not applied the same by all datasets
+        fullname_cleaned = re.sub(r"(county|city|and|borough|municipality|censusarea)", "", fullname_normalized)
+
         return "%s-%s" % (state_abbr, fullname_cleaned)
 
     def __repr__(self):

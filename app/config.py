@@ -44,9 +44,7 @@ class VotingKeys(object):
 
 POLLING_DATASET = os.path.join(DATA_DIR, "polling/yale-all-2019.csv")
 
-ASTHMA_DATASETS = [
-    ("VA", os.path.join(DATA_DIR, 'asthma/va.csv'))
-]
+ASTHMA_DATASET = os.path.join(DATA_DIR, 'asthma/all.csv')
 
 class DailyKosDatasets(object):
     SS_FOLDER = os.path.join(DATA_DIR, 'daily-kos/counties-to-state-senate-districts/')

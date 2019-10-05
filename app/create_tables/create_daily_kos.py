@@ -77,4 +77,3 @@ def create_daily_kos(session):
     create_states(session)
     create_counties_and_districts(session, DK.SS_FOLDER, DK.SS_KEYS, DistrictType.STATE_SENATE)
     create_counties_and_districts(session, DK.SH_FOLDER, DK.SH_KEYS, DistrictType.STATE_HOUSE)
-

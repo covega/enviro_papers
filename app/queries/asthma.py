@@ -1,8 +1,10 @@
 from sqlalchemy import func
 from app.models import CountyAsthmaCounts, DistrictAsthmaCounts, CountyFragment
 
-def create_district_astham_counts(session):
+def create_district_asthma_counts(session):
     dacs_created = 0
+
+    session.query(DistrictAsthmaCounts).delete()
 
     query = session.query(CountyFragment).\
                     join(CountyAsthmaCounts).\

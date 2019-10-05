@@ -1,16 +1,13 @@
 import os, os.path
 import pandas as pd
 from app.models import CountyPoll, CountyFragment
-from app.config import POLLING_DATASET, STATES_CSV
+from app.config import POLLING_DATASET
+from app.util import StateAbbrLookup
 
+lookup = StateAbbrLookup()
 
 def create_polling(session):
     polls_created = 0
-    states_data = pd.read_csv(STATES_CSV, encoding="ISO-8859-1")
-    state_abbr_lookup = {}
-
-    for _, row in states_data.iterrows():
-        state_abbr_lookup[row["State"]] = row["Abbreviation"]
 
     county_polling_data = pd.read_csv(POLLING_DATASET, encoding="ISO-8859-1")
 
@@ -19,7 +16,7 @@ def create_polling(session):
             continue
         (county_fullname, state_fullname) = row['GeoName'].split(', ')
         county_fullname = county_fullname.replace('County', '')
-        state_abbr = state_abbr_lookup[state_fullname]
+        state_abbr = lookup.get_abbr(state_fullname)
         county_shortcode = CountyFragment.to_shortcode(state_abbr,
                                                        county_fullname)
         percent_happening = row['happening']
