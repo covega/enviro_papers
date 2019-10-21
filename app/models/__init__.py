@@ -5,3 +5,4 @@ from .daily_kos import *
 from .polling import *
 from .asthma import *
 from .voting import *
+from .jobs import *

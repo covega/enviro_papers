@@ -42,6 +42,32 @@ class VotingKeys(object):
     BILL_DETAILS = "Vote details"
     BILL_OUTCOME = "Outcome"
 
+JOBS_DATASET = os.path.join(DATA_DIR, "jobs/all.csv")
+JOBS_STATS = {
+    'countSolarJobs': 'count_solar_jobs',
+    'countWindJobs': 'count_wind_jobs',
+    'countEnergyJobs': 'count_energy_jobs',
+    'totalJobs': 'total_jobs',
+    'percentOfStateJobs': 'percent_of_state_jobs',
+    'residentialMWhInvested': 'residential_mwh_invested',
+    'commercialMWhInvested': 'commercial_mwh_invested',
+    'utilityMWhInvested': 'utility_mwh_invested',
+    'totalMWhInvested': 'total_mwh_invested',
+    'residentialDollarsInvested': 'residential_dollars_invested',
+    'commercialDollarsInvested': 'commercial_dollars_invested',
+    'utilityDollarsInvested': 'utility_dollars_invested',
+    'totalDollarsInvested': 'total_dollars_invested',
+    'investmentHomesEquivalent': 'investment_homes_equivalent',
+    'countResidentialInstallations': 'count_residential_installations',
+    'countCommercialInstallations': 'count_commercial_installations',
+    'countUtilityInstallations': 'count_utility_installations',
+    'countTotalInstallations': 'total_installations',
+    'residentialMWCapacity': 'residential_mw_capacity',
+    'commercialMWCapacity': 'commercial_mw_capacity',
+    'utilityMWCapacity': 'utility_mw_capacity',
+    'totalMWCapacity': 'total_mw_capacity'
+}
+
 POLLING_DATASET = os.path.join(DATA_DIR, "polling/yale-all-2019.csv")
 
 ASTHMA_DATASET = os.path.join(DATA_DIR, 'asthma/all.csv')

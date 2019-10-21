@@ -1,3 +1,4 @@
+import re
 import pandas as pd
 from app.config import STATES_CSV
 
@@ -17,3 +18,9 @@ def safe_cast(type, value):
         return type(value)
     except (ValueError, TypeError):
         return None
+
+def clean_float(s):
+    if type(s) == str:
+        s = re.sub(r"[^0-9.]*", "", s)
+
+    return float(s)
